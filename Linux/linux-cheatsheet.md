@@ -1,85 +1,66 @@
-# Linux File Permissions
+# Linux Command Cheat Sheet
 
-Linux permissions help control access to files and directories.
+## File Navigation
 
-## Permission Types
-
-- Read (`r`)
-- Write (`w`)
-- Execute (`x`)
-
-Permissions are assigned to:
-- Owner
-- Group
-- Others
+| Command | Description |
+|---|---|
+| `pwd` | Print current directory |
+| `ls` | List files and directories |
+| `cd` | Change directory |
+| `mkdir` | Create a directory |
+| `touch` | Create a file |
 
 ---
 
-## `ls -l`
+## File Management
 
-Displays file permissions and ownership information.
-
-```bash
-ls -l
-```
-
-Example output:
-
-```bash
--rwxr-xr-- 1 user group file.txt
-```
+| Command | Description |
+|---|---|
+| `cp` | Copy files |
+| `mv` | Move or rename files |
+| `rm` | Remove files |
+| `cat` | Display file contents |
+| `less` | View files page by page |
 
 ---
 
-## `chmod`
+## File Permissions
 
-Changes file permissions.
-
-```bash
-chmod 755 script.sh
-```
-
-Permission breakdown:
-- Owner: read, write, execute
-- Group: read, execute
-- Others: read, execute
+| Command | Description |
+|---|---|
+| `chmod` | Change permissions |
+| `chown` | Change file owner |
+| `chgrp` | Change group ownership |
+| `ls -l` | View file permissions |
 
 ---
 
-## `chmod +x`
+## Process Management
 
-Adds executable permission to a file.
-
-```bash
-chmod +x script.sh
-```
-
----
-
-## `chmod -w`
-
-Removes write permission from a file.
-
-```bash
-chmod -w notes.txt
-```
+| Command | Description |
+|---|---|
+| `ps` | Display active processes |
+| `top` | Real-time process monitoring |
+| `kill` | Terminate a process |
 
 ---
 
-## `chown`
+## System Information
 
-Changes file ownership.
-
-```bash
-chown user:file notes.txt
-```
+| Command | Description |
+|---|---|
+| `whoami` | Show current user |
+| `uname -a` | Display system information |
+| `df -h` | Show disk usage |
+| `free -h` | Display memory usage |
 
 ---
 
-## `chgrp`
+## Networking
 
-Changes group ownership.
-
-```bash
-chgrp developers notes.txt
-```
+| Command | Description |
+|---|---|
+| `ping` | Test network connectivity |
+| `ifconfig` | Show network interfaces |
+| `ssh` | Connect to remote systems |
+| `scp` | Securely copy files |
