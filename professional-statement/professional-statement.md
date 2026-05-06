@@ -1,1 +1,1 @@
-
+I am an aspiring cybersecurity professional with a strong interest in protecting systems, networks, and sensitive information from evolving cyber threats. Through continuous learning and hands-on training, I am developing skills in problem-solving, threat analysis, and security best practices. I value integrity, attention to detail, and adaptability, and I aim to support organizations by helping identify risks, strengthen security practices, and maintain secure digital environments.
