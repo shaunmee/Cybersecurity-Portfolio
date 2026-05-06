@@ -1,8 +1,10 @@
 # Basic Linux Navigation
 
+Linux navigation commands are used to move through the file system and manage files and directories.
+
 ## `pwd`
 
-Shows the current working directory.
+Displays the current working directory.
 
 ```bash
 pwd
@@ -12,10 +14,20 @@ pwd
 
 ## `ls`
 
-Lists files and folders.
+Lists files and directories.
 
 ```bash
 ls
+```
+
+---
+
+## `ls -la`
+
+Lists detailed information including hidden files.
+
+```bash
+ls -la
 ```
 
 ---
@@ -25,7 +37,7 @@ ls
 Changes directories.
 
 ```bash
-cd Downloads
+cd Documents
 ```
 
 Go back one directory:
@@ -62,22 +74,12 @@ touch notes.txt
 
 ---
 
-## `rm`
-
-Deletes a file.
-
-```bash
-rm notes.txt
-```
-
----
-
 ## `cp`
 
-Copies files.
+Copies files and directories.
 
 ```bash
-cp file1.txt backup.txt
+cp notes.txt backup.txt
 ```
 
 ---
@@ -88,4 +90,14 @@ Moves or renames files.
 
 ```bash
 mv old.txt new.txt
+```
+
+---
+
+## `rm`
+
+Deletes files.
+
+```bash
+rm notes.txt
 ```
