@@ -1,134 +1,85 @@
-# Linux Command Cheat Sheet
+# Linux File Permissions
 
-## File Navigation
+Linux permissions help control access to files and directories.
 
-### `pwd`
-Print the current working directory.
+## Permission Types
+
+- Read (`r`)
+- Write (`w`)
+- Execute (`x`)
+
+Permissions are assigned to:
+- Owner
+- Group
+- Others
+
+---
+
+## `ls -l`
+
+Displays file permissions and ownership information.
 
 ```bash
-pwd
+ls -l
 ```
 
-### `ls`
-List files and directories.
+Example output:
 
 ```bash
-ls
-```
-
-### `ls -la`
-Display detailed information including hidden files.
-
-```bash
-ls -la
-```
-
-### `cd`
-Change directories.
-
-```bash
-cd Documents
-```
-
-### `mkdir`
-Create a new directory.
-
-```bash
-mkdir projects
-```
-
-### `rm`
-Remove a file.
-
-```bash
-rm notes.txt
-```
-
-### `cp`
-Copy files and directories.
-
-```bash
-cp file.txt backup.txt
-```
-
-### `mv`
-Move or rename files.
-
-```bash
-mv old.txt new.txt
+-rwxr-xr-- 1 user group file.txt
 ```
 
 ---
 
-## File Viewing
+## `chmod`
 
-### `cat`
-Display file contents.
+Changes file permissions.
 
 ```bash
-cat notes.txt
+chmod 755 script.sh
 ```
 
-### `less`
-View large files page by page.
+Permission breakdown:
+- Owner: read, write, execute
+- Group: read, execute
+- Others: read, execute
+
+---
+
+## `chmod +x`
+
+Adds executable permission to a file.
 
 ```bash
-less logfile.txt
-```
-
-### `head`
-Show the first lines of a file.
-
-```bash
-head notes.txt
-```
-
-### `tail`
-Show the last lines of a file.
-
-```bash
-tail logfile.txt
+chmod +x script.sh
 ```
 
 ---
 
-## Searching
+## `chmod -w`
 
-### `grep`
-Search for patterns inside files.
+Removes write permission from a file.
 
 ```bash
-grep password notes.txt
+chmod -w notes.txt
 ```
 
 ---
 
-## System Information
+## `chown`
 
-### `whoami`
-Display the current user.
+Changes file ownership.
 
 ```bash
-whoami
+chown user:file notes.txt
 ```
 
-### `uname -a`
-Display system information.
+---
+
+## `chgrp`
+
+Changes group ownership.
 
 ```bash
-uname -a
-```
-
-### `df -h`
-Show disk space usage.
-
-```bash
-df -h
-```
-
-### `free -h`
-Display memory usage.
-
-```bash
-free -h
+chgrp developers notes.txt
 ```
