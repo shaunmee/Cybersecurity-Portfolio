@@ -1,6 +1,6 @@
 # Linux File Permissions
 
-Linux uses permissions to control access to files and directories.
+Linux permissions help control access to files and directories.
 
 ## Permission Types
 
@@ -8,11 +8,32 @@ Linux uses permissions to control access to files and directories.
 - Write (`w`)
 - Execute (`x`)
 
+Permissions are assigned to:
+- Owner
+- Group
+- Others
+
+---
+
+## `ls -l`
+
+Displays file permissions and ownership information.
+
+```bash
+ls -l
+```
+
+Example output:
+
+```bash
+-rwxr-xr-- 1 user group file.txt
+```
+
 ---
 
 ## `chmod`
 
-Change file permissions.
+Changes file permissions.
 
 ```bash
 chmod 755 script.sh
@@ -27,7 +48,7 @@ Permission breakdown:
 
 ## `chmod +x`
 
-Add executable permission to a file.
+Adds executable permission to a file.
 
 ```bash
 chmod +x script.sh
@@ -35,9 +56,19 @@ chmod +x script.sh
 
 ---
 
+## `chmod -w`
+
+Removes write permission from a file.
+
+```bash
+chmod -w notes.txt
+```
+
+---
+
 ## `chown`
 
-Change the owner of a file.
+Changes file ownership.
 
 ```bash
 chown user:file notes.txt
@@ -47,18 +78,8 @@ chown user:file notes.txt
 
 ## `chgrp`
 
-Change the group ownership of a file.
+Changes group ownership.
 
 ```bash
 chgrp developers notes.txt
-```
-
----
-
-## `ls -l`
-
-Display detailed permissions information.
-
-```bash
-ls -l
 ```
